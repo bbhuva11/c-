@@ -1,0 +1,26 @@
+using System;
+
+namespace box_unbox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int a = 20;
+           
+            object obj = a;
+            a = 50;
+            
+            Console.WriteLine("Value of a is : {0}", a);
+            Console.WriteLine("Value of obj object is : {0}", obj);
+
+            
+            int i = (int)obj;
+
+            
+            Console.WriteLine("Value of obj object is : {0} ", obj);
+            Console.WriteLine("Value of i is : {0} ", i);
+        }
+    }
+}

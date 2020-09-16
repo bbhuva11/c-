@@ -1,0 +1,31 @@
+using System;
+
+namespace classwork2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Default bufferheight is : {0} ", Console.BufferHeight);
+            Console.WriteLine("Default bufferwidth is : {0} ", Console.BufferWidth);
+            Console.BufferHeight = 500;
+            Console.BufferWidth = 1000;
+            Console.WriteLine("my name is bhavesh bhuva");
+            Console.WriteLine("Current bufferheight is : {0} ",Console.BufferHeight);
+            Console.WriteLine("Current bufferwidth is : {0} ", Console.BufferWidth);
+            Console.WriteLine("Error automatic : {0}", Console.Error);
+            Console.WriteLine("Standard IN : {0}", Console.In);
+            Console.WriteLine("Largest window height : {0}", Console.LargestWindowHeight);
+            Console.WriteLine("Largest window width : {0}", Console.LargestWindowWidth);
+            Console.WriteLine("Standard OUT : {0}", Console.Out);
+            Console.WriteLine("Title is : {0}", Console.Title);
+            Console.WriteLine("Window height : {0}", Console.WindowHeight);
+            Console.WriteLine("Window left : {0}", Console.WindowLeft);
+            Console.WriteLine("Window top : {0}", Console.WindowTop);
+            Console.WriteLine("Window width : {0}", Console.WindowWidth);
+
+        }
+    }
+}

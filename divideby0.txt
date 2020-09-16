@@ -1,0 +1,19 @@
+using System;
+
+namespace divideby0
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            int b = 0;
+            int c = a / b;
+            if(c == a / b)
+            {
+                throw new DivideByZeroException();
+            }
+        }
+    }
+}

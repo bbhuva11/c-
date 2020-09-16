@@ -1,0 +1,25 @@
+using System;
+
+namespace exp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter x : ");
+            double x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter y : ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter z : ");
+            double z = Convert.ToDouble(Console.ReadLine());
+
+            double result1 = (x + y) * z;
+            double result2 = x * y + y * z;
+
+            Console.WriteLine($"Result of specified numbers {x} , {y} and {z}, (x + y) * z is {result1} and x . y + y . z is {result2}");
+
+        }
+    }
+}

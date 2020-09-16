@@ -1,0 +1,27 @@
+using System;
+
+namespace exp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] str1;
+            string s = "";
+            int count = 0;
+            Console.WriteLine("Enter the string");
+            string str = Console.ReadLine();
+
+            str1 = str.Split(' ');
+            foreach (string str2 in str1)
+            {
+                if (str2.Length > count)
+                {
+                    s = str2;
+                    count = str2.Length;
+                }
+            }
+            Console.WriteLine(s.Length);
+        }
+    }
+}

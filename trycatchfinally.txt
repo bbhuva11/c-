@@ -1,0 +1,31 @@
+using System;
+
+namespace trycatchfilnally
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int b = 0;
+            int a = 500;
+            try
+            {
+                a = 100 / b;
+                Console.WriteLine("Not executed line");
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("DivideByZeroException");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Exception");
+            }
+            finally
+            {
+                Console.WriteLine("Finally");
+            }
+            Console.WriteLine($"Result is {a}");
+        }
+    }
+}

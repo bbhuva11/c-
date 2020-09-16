@@ -1,0 +1,33 @@
+using System;
+
+namespace exp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a value of a : ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a value of b : ");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a value of c : ");
+            int c = int.Parse(Console.ReadLine());
+
+            //maximum
+            if ( a > b && a > c)
+                Console.WriteLine("a is maximum");
+            if (b > a && b > c)
+                Console.WriteLine("b is maximum");
+            if (c > a && c > b)
+                Console.WriteLine("c is maximum");
+
+            //minimum
+            if (a < b && a < c)
+                Console.WriteLine("a is minimum");
+            if (b < a && b < c)
+                Console.WriteLine("b is minimum");
+            if (c < a && c < b)
+                Console.WriteLine("c is minimum");
+        }
+    }
+}

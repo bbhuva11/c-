@@ -1,0 +1,22 @@
+using System;
+
+namespace exp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Input the first number");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Input the second number");
+            int b = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"The addition of {a} + {b} is : {a + b}");
+            Console.WriteLine($"The subtraction of {a} - {b} is : {a - b}");
+            Console.WriteLine($"The division of {a} / {b} is : {a / b}");
+            Console.WriteLine($"The multiplication of {a} * {b} is : {a * b}");
+            Console.WriteLine($"The modulus of {a} % {b} is : {a % b}");
+        }
+    }
+}

@@ -1,0 +1,30 @@
+using System;
+
+namespace program13
+{
+    class Check_even_number : Exception
+    {
+        public Check_even_number(string str)
+        {
+            Console.WriteLine("Number is not even");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the number : ");
+            int a = int.Parse(Console.ReadLine());
+
+            if (a % 2 != 0)
+            {
+                throw new Check_even_number("Number is not even");
+            }
+
+            else
+            {
+                Console.WriteLine("Number is even");
+            }
+         }
+    }
+}
